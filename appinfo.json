@@ -1,0 +1,15 @@
+{
+  "uuid": "a2ae788e-42b0-4f63-a967-b9fe6d1dfeaa",
+  "shortName": "InstructFace",
+  "longName": "InstructFace informational watchface for 1418",
+  "companyName": "Vae Victis",
+  "versionLabel": "0.1",
+  "sdkVersion": "3",
+  "watchapp": {
+    "watchface": true
+  },
+  "capabilities": [],
+  "appKeys": {},
+  "resources": {}
+}
+
