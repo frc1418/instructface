@@ -11,12 +11,14 @@
   "capabilities": [],
   "appKeys": {},
   "resources": {
-      {
-          "type": "png",
-          "menuIcon": true,
-          "name": "IMAGE_MENU_ICON",
-          "file": "images/logo.png"
-      }
+      "media": [
+          {
+              "type": "png",
+              "menuIcon": true,
+              "name": "IMAGE_MENU_ICON",
+              "file": "images/logo.png"
+          }
+      ]
   }
 }
 
