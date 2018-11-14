@@ -7,20 +7,15 @@ static void main_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
 
-  // Create the TextLayer with specific bounds
   s_time_layer = text_layer_create(GRect(0, 0, bounds.size.w, 45));
-  //text_layer_set_background_color(s_time_layer, GColorClear);
-  text_layer_set_text_color(s_time_layer, GColorBlack);
   text_layer_set_text(s_time_layer, "");
   text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_LECO_42_NUMBERS));
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
 
   s_instructions_layer = text_layer_create(GRect(0, 45, bounds.size.w, 300));
-  text_layer_set_text_color(s_instructions_layer, GColorBlack);
-  text_layer_set_text(s_instructions_layer, "Press and hold select (right center) button for 1 second to open the drive coaching app, then press again when the match starts to run the timer.");
+  text_layer_set_text(s_instructions_layer, "Briefly hold right middle button to open drive coach app.");
   text_layer_set_font(s_instructions_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
-  text_layer_set_text_alignment(s_instructions_layer, GTextAlignmentLeft);
   layer_add_child(window_layer, text_layer_get_layer(s_instructions_layer));
 }
 
