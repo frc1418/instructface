@@ -8,8 +8,8 @@ static void main_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
 
-  s_instructions_layer = text_layer_create(GRect(10, -5, bounds.size.w - 10*2, bounds.size.h));
-  text_layer_set_text(s_instructions_layer, "Briefly hold right middle button to open drive coach app.");
+  s_instructions_layer = text_layer_create(GRect(10, -3, bounds.size.w - 10*2, bounds.size.h));
+  text_layer_set_text(s_instructions_layer, "Briefly hold right middle button to open drive coach app. ->");
   text_layer_set_font(s_instructions_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
   layer_add_child(window_layer, text_layer_get_layer(s_instructions_layer));
 
