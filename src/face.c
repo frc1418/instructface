@@ -13,7 +13,7 @@ static void main_window_load(Window *window) {
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
 
-  s_instructions_layer = text_layer_create(GRect(0, 45, bounds.size.w, 300));
+  s_instructions_layer = text_layer_create(GRect(5, 45, bounds.size.w - 5*2, 300));
   text_layer_set_text(s_instructions_layer, "Briefly hold right middle button to open drive coach app.");
   text_layer_set_font(s_instructions_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
   layer_add_child(window_layer, text_layer_get_layer(s_instructions_layer));
